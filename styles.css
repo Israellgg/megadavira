@@ -89,4 +89,29 @@ body {
     font-size: 14px;
     color: #555;
   }
+
+@media screen and (max-width: 360px) {
+  
+  h1 {
+    text-align: center;
+  }
+
+  .bloco {
+    max-width: 340px;
+    align-items: center;
+    
+  }
+
+ 
+  #blocosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .lote {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
   
