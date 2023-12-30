@@ -99,6 +99,7 @@ body {
   .bloco {
     max-width: 340px;
     align-items: center;
+    overflow: hidden;
     
   }
 
