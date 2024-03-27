@@ -1,5 +1,6 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,19 +14,19 @@ body {
   h1 {
     color: #2D7322;
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 3rem;
     
   }
   
   label {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 10px;
     color: #555;
   }
   
   #numeroInput {
     padding: 10px;
-    font-size: 14px;
+    font-size: 1rem;
     border: 1px solid #92D95F;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -74,7 +75,7 @@ body {
     border: 2px solid #ddd;
     border-radius: 8px;
     background-color: #ecf0f1;
-    font-size: 16px; /* Reduzi o tamanho da fonte */
+    font-size: 1rem; /* Reduzi o tamanho da fonte */
     width: 25px; /* Reduzi a largura */
     text-align: center;
   }
@@ -86,33 +87,56 @@ body {
   
   .soma {
     margin: 5px;
-    font-size: 14px;
+    font-size: 1remx;
     color: #555;
   }
 
-@media screen and (max-width: 375px) {
-  
+@media (max-width: 425px) {
+
   h1 {
-    text-align: center;
+    
+    margin-bottom: 2%;
+    font-size: 2rem;
+  }
+
+  #numeroInput {
+    padding: 2%;
+    width: 50%;
   }
 
   .bloco {
-    max-width: 340px;
-    align-items: center;
-    overflow: hidden;
-    
-  }
-
- 
-  #blocosContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+    transition: none;
   }
 
   .lote {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 5px;
+    justify-content: baseline;
+    
+    
+    
   }
+  .numero {
+    margin-bottom: 2%;
+    padding: 2% 0%;
+    font-size: 0.8rem;
+    width: 25px;
+    text-align: center;
+}
+
+.soma {
+  margin: 5px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.bloco:hover {
+  transform: none;
+}
+
+ 
 }
   
